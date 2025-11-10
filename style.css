@@ -1,0 +1,685 @@
+.headers{
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 40px;
+    color: #FF6700;
+}
+
+#homepage{
+    background-color: black;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background-color: #000;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center; /* center the links */
+  padding: 15px 30px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #FF6700;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* Highlight the current page */
+.nav-links a.active {
+  color: white;
+  border-bottom: 2px solid #FF6700;
+  font-weight: 700;
+}
+
+.image-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.image-box {
+  width: 200px;    
+  height: 150px;      
+  background-color: #222; 
+  border: 2px dashed #FF6700; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FF6700; 
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+#homepage{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+.homeimg{
+  width: 25%;
+  padding: 10px;
+  border: 2px solid #FF6700;
+  border-radius: 15px;
+  padding: 20px;
+
+}
+
+#description{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  background-color: black;
+  color: rgb(196, 195, 195);
+  font-size: 25px;
+  line-height: 1.5;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 17px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #FF6700;
+  border-radius: 15px;
+}
+
+
+#shoe-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.shoe-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.shoe-description {
+  flex: 1;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  width: 80%;
+}
+
+.shoe-title {
+  font-family: "Orbitron", sans-serif;
+  color: #FF6700;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.shoe-image {
+  flex: 1;
+  background-color: #222;
+  border: 2px solid #FF6700;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.shoe-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Bottom links */
+.shoe-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.shoe-link {
+  background-color: #111;
+  color: #FF6700;
+  border: 2px solid #FF6700;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-family: "Orbitron", sans-serif;
+}
+
+#buyshoe{
+  background-color: #111;
+  color: #FF6700;
+  border: 2px solid #FF6700;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-family: "Orbitron", sans-serif;
+}
+
+#buyshoe:hover{
+  background-color: white;
+  color: black;
+}
+
+.shoe-link:hover {
+  background-color: #FF6700;
+  color: black;
+}
+
+.shoe-link.small {
+  flex: 1;
+  min-width: 150px;
+}
+
+.shoe-link.big {
+  flex: 2;
+  min-width: 250px;
+}
+
+
+#belt-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #000;
+  position: relative;
+}
+
+.belt-container {
+  display: flex;
+  gap: 40px;
+  width: 80%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.belt-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* makes it appear above right side */
+}
+
+.belt-image {
+  width: 100%; /* make it fill the left side */
+  max-width: 500px; /* optional limit */
+  border-radius: 10%; /* oval/circle */
+  border: 3px solid #FF6700;
+  object-fit: cover;
+  padding: 10px;
+  margin-right: -50px; /* overlap right section slightly */
+}
+
+.belt-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1;
+}
+
+.belt-text {
+  background-color: #000000;
+  color: White;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  border: 2px solid #FF6700;
+}
+
+#runsticker{
+  width: 15%;
+  position: absolute;
+  top: 25px;
+  right: 200px;
+}
+
+
+.belt-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#lastbelt{
+  flex: 1;
+  min-width: 150px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #FF6700;
+  color: #FF6700;
+  font-family: "Orbitron", sans-serif;
+  transition: all 0.3s;
+}
+
+#lastbelt:hover{
+  background-color: white;
+  color: black;
+}
+
+.belt-link {
+  flex: 1;
+  min-width: 150px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #FF6700;
+  color: #FF6700;
+  font-family: "Orbitron", sans-serif;
+  transition: all 0.3s;
+}
+
+.belt-link:hover {
+  background-color: #FF6700;
+  color: black;
+}
+
+/* Responsive for small screens */
+@media (max-width: 900px) {
+  .belt-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .belt-left, .belt-right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .belt-image {
+    width: 90%; /* fill more space on mobile */
+    margin-right: 0; /* remove overlap */
+  }
+
+  .belt-text {
+    width: 70%;
+    text-align: center;
+  }
+
+  .belt-links {
+    justify-content: center;
+  }
+}
+
+
+
+
+ body {
+    margin: 0;
+    font-family: "Orbitron", sans-serif;
+    background-color: #000;
+    color: #FF6700;
+  }
+
+  /* Main 3-column layout */
+  #vertical-layout {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  .captionsme{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+  }
+
+  /* Left and right rectangles */
+  .side-rect {
+    width: 150px;
+    background-color: #111;
+    border: 2px solid #FF6700;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .side-rect img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+
+  .center-column {
+    display: flex;
+    flex-direction: column !important; /* Force vertical stacking */
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+  }
+
+  .center-column > * {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .center-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .aboutmepic{
+    width: 30%;
+    border-radius: 15px;
+  }
+
+  #shoe{
+    width: 50%;
+    border-radius: 15px;
+  }
+
+
+  #threepics{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .center-text {
+    width: 90%;
+    background-color: #111;
+    border: 2px solid #FF6700;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+  }
+
+  .center-link {
+    width: 100%;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+  }
+
+  .center-link:hover {
+    background-color: #FF6700;
+    color: black;
+  }
+
+  /* Make side rectangles stretch vertically */
+  .side-rect.stretch {
+    height: 100%;
+    width:20%; 
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    #vertical-layout {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: nowrap; /* keep side boxes beside center */
+    }
+
+    .side-rect {
+      width: 80%;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .center-column {
+      width: 100%;
+      max-width: none;
+    }}
+
+   #homeshoe{
+    border-radius: 30px;
+   } 
+
+   #homebelt{
+    border-radius: 30px;
+   }
+
+   #homestrava{
+    border-radius: 30px;
+   }
+
+
+   /* --- Global Styles --- */
+body {
+  margin: 0;
+  background-color: #000;
+  color: #FF6700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+  background-color: #111;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #FF6700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.nav-links a.active {
+  color: #fff;
+  border-bottom: 2px solid #FF6700;
+  padding-bottom: 2px;
+}
+
+/* --- Header --- */
+.headers {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* --- Main Layout --- */
+#strava-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 50px auto;
+  width: 90%;
+}
+
+/* --- Left Scrolling Column --- */
+.scroll-column {
+  width: 350px;
+  height: 725px;
+  overflow-y: scroll;
+  border: 2px solid #FF6700;
+  border-radius: 15px;
+  background-color: #111;
+  padding: 10px;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.scroll-container img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #FF6700;
+  transition: transform 0.3s ease;
+}
+
+.scroll-container img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Right Section --- */
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  gap: 25px;
+}
+
+/* --- Two Square Images --- */
+.image-pair {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.image-pair img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #FF6700;
+  transition: transform 0.3s ease;
+}
+
+.image-pair img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Text Box --- */
+.strava-text {
+  background-color: #111;
+  color: rgb(200, 200, 200);
+  border: 2px solid #FF6700;
+  border-radius: 15px;
+  padding: 25px;
+  width: 800px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.strava-text h2 {
+  color: #FF6700;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* --- Scrollbar Styling --- */
+.scroll-column::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll-column::-webkit-scrollbar-thumb {
+  background-color: #FF6700;
+  border-radius: 5px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  #strava-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scroll-column {
+    width: 85%;
+    height: 250px;
+  }
+
+  .right-section {
+    width: 90%;
+  }
+
+  .image-pair {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-pair img {
+    width: 80%;
+    height: auto;
+  }
+
+  .headers {
+    font-size: 30px;
+  }
+}
+
